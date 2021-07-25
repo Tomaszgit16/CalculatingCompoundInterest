@@ -5,9 +5,16 @@ import math
 ctype = int(input('Enter 1 for continous compounding or enter 2 for non-continous compounding: '))
 
 #Check for invailild input
-if (ctype !=1 or ctype != 2):
-    print('Invaild input')
-    sys.exit()
+
+# def is_ok(a):
+#     if (years<=0 or principal<=0 or interest<=0 or comp_per_year<=0):
+#         print('All inputs must be positive')
+#         sys.exit()
+
+
+# if (ctype !=1 or ctype != 2):
+#     print('Invaild input')
+#     sys.exit()
 
 #continous compounding
 
@@ -18,9 +25,6 @@ if ctype==1:
 
     print('How much money is currently in your account?')
     principal = float(input('Enter current amount in account: '))
-
-    print('How much money do you plan on investing monthly?')
-    monthly_invest = float(input('Enter amount: '))
 
     print('What do you estimate will be th early interest of this investment?')
     interest = float(input('Enter interest number % example 10% = 0.1 '))
@@ -47,10 +51,6 @@ if ctype==2:
     interest = float(input('Enter interest number % example 10% = 0.1 '))
 
     comp_per_year = float(input('Enter the number of times the interest is compounded per year: '))
-
-    if (years<=0 or principal<=0 or interest<=0 or comp_per_year<=0):
-        print('All inputs must be positive')
-        sys.exit()
 
     amount =  principal*(1+interest/comp_per_year)**(comp_per_year*years)
     print('Final amount', amount)
