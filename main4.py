@@ -54,3 +54,7 @@ if ctype==2:
 
     amount =  principal*(1+interest/comp_per_year)**(comp_per_year*years)
     print('Final amount', amount)
+
+    if (years<0 or principal<0 or interest<0):
+        print('All inputs must be positive')
+        sys.exit()
