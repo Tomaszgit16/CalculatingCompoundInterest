@@ -11,7 +11,7 @@ if (ctype !=1 or ctype != 2):
 
 #continous compounding
 
-elif  ctype==1:
+if ctype==1:
 
     print('How many year will you be saving?')
     years = int(input('Enter years: '))
@@ -34,16 +34,14 @@ elif  ctype==1:
 
 #continous compounding
 
-elif  ctype==2:
+if ctype==2:
+
 
     print('How many year will you be saving?')
     years = int(input('Enter years: '))
 
     print('How much money is currently in your account?')
     principal = float(input('Enter current amount in account: '))
-
-    print('How much money do you plan on investing monthly?')
-    monthly_invest = float(input('Enter amount: '))
 
     print('What do you estimate will be th early interest of this investment?')
     interest = float(input('Enter interest number % example 10% = 0.1 '))
