@@ -1,4 +1,6 @@
 # Estimated yearly interest
+import sys
+
 start_over = 'True'
 while start_over == 'True':
 
@@ -17,6 +19,8 @@ while start_over == 'True':
 
     #monthly_invest = monthly_invest * 12
     final_amount = 0
+
+
 
     i = 1
     print(f'Year {i} : ', round(float((principal) * (1+real_interest)), 5),' zł')
